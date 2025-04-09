@@ -1,0 +1,145 @@
+/*Css document
+
+
+    /* Tons (Azul/Cinza/Branco) */
+ :root {
+     --cor-fundo-claro: #f0f2f5; /* Cinza muito claro (fundo comum do FB) */
+     --cor-fundo-form: #ffffff; /* Branco para o fundo do formulário */
+     --cor-borda: #dadde1;      /* Cinza claro para bordas gerais */
+     --cor-borda-input: #ccd0d5; /* Cinza um pouco mais escuro para bordas de input */
+     --cor-botao: #1877f2;      /* Azul principal do Facebook */
+     --cor-botao-hover: #166fe5; /* Azul um pouco mais escuro para hover */
+     --cor-texto-botao: white;
+     --cor-obrigatorio: #fa3e3e; /* Vermelho vivo para alerta */
+     --cor-texto-label: #1c1e21; /* Cinza muito escuro/quase preto para texto */
+ }
+
+   .form-control {
+
+
+        margin: 10px 0;
+        padding: 8px 10px; /* Ajuste leve no padding */
+        border: 1px solid var(--cor-borda-input);
+        border-radius: 5px;
+        background-color: white; /* Fundo branco para melhor leitura */
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        color: var(--cor-texto-label); /* Cor do texto dentro do input */
+    }
+
+    .form-control:focus { /* Estilo ao focar no campo */
+        border-color: var(--cor-botao);
+        outline: none; /* Remove o outline padrão */
+        box-shadow: 0 0 0 2px rgba(106, 122, 138, 0.2); /* Sombra suave azul-acinzentada */
+    }
+
+
+    .meu-form {
+        border: 1px solid var(--cor-borda);
+        padding: 25px; /* Aumentar padding */
+        max-width: 500px;
+        margin: 30px auto; /* Aumentar margem */
+        background-color: var(--cor-fundo-form);
+        border-radius: 8px; /* Bordas mais arredondadas */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+
+    .label-obrigatorio::after {
+        content: ' *';
+        color: var(--cor-obrigatorio);
+    }
+
+    .botao-principal {
+        background-color: var(--cor-botao);
+        border: 1px solid var(--cor-botao); /* Borda da mesma cor */
+        color: var(--cor-texto-botao);
+        padding: 10px 20px; /* Aumentar padding */
+        border-radius: 5px; /* Consistente com form-control */
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.2s ease, border-color 0.2s ease; /* Transição suave */
+    }
+
+    .botao-principal:hover {
+        background-color: var(--cor-botao-hover);
+        border-color: var(--cor-botao-hover);
+    }
+
+    /* Estilo base para os inputs de texto, email, senha e textarea */
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    select, /* Incluir select aqui */
+    textarea {
+        /* A classe .form-control já aplica a maioria dos estilos */
+        /* Podemos remover a borda específica aqui se .form-control for suficiente */
+        /* border: 1px solid var(--cor-borda-input); */
+    }
+
+     /* Estilo simples para os divs que agrupam label+input */
+    div {
+        margin-bottom: 18px; /* Aumentar espaçamento */
+    }
+
+    /* Estilo base para a maioria dos labels */
+    label {
+        display: block;
+        margin-bottom: 6px; /* Aumentar espaço abaixo do label */
+        font-weight: bold;
+        color: var(--cor-texto-label); /* Cor do texto do label */
+        font-size: 14px; /* Tamanho consistente */
+    }
+
+    /* Título para grupos de radio/checkbox */
+    p {
+        font-weight: bold;
+        color: var(--cor-texto-label);
+        margin-bottom: 8px;
+    }
+
+    /* Rádios/Checkboxes Inline */
+    .radio-group {
+        display: flex;
+        flex-wrap: wrap; /* Permite quebrar linha se não couber */
+        align-items: center;
+        gap: 10px 20px; /* Espaço vertical e horizontal */
+        margin-top: 5px;
+        /* background-color: #fdfdff; /* Fundo levemente diferente para o grupo */
+        /* padding: 10px; */
+        /* border-radius: 4px; */
+    }
+
+    /* Estilo específico para labels de radio e checkbox DENTRO do grupo */
+    .radio-group label {
+        display: inline-flex; /* Usa inline-flex para alinhar input e texto */
+        align-items: center;
+        font-weight: normal;
+        margin-bottom: 0;
+        cursor: pointer;
+        color: var(--cor-texto-label); /* Cor do texto consistente */
+    }
+
+    /* Alinhar verticalmente o input com o texto do label */
+    .radio-group input[type='radio'],
+    .radio-group input[type='checkbox'] {
+        margin-right: 6px; /* Espaço entre input e label */
+        cursor: pointer;
+        accent-color: var(--cor-botao); /* Cor do radio/checkbox selecionado */
+    }
+
+    /* Estilo para checkboxes em linhas separadas (se não usar .radio-group) */
+    div > div > input[type='checkbox'] + label { /* Seleciona labels de checkbox em divs aninhadas */
+       display: inline-flex;
+       align-items: center;
+       font-weight: normal;
+       margin-bottom: 0;
+       cursor: pointer;
+       color: var(--cor-texto-label);
+    }
+     div > div > input[type='checkbox'] {
+        margin-right: 6px;
+        cursor: pointer;
+        accent-color: var(--cor-botao);
+     }

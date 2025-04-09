@@ -1,0 +1,82 @@
+  
+     /* Tons InfoScript (Azul/Verde Tecnológico) */
+    :root {
+        --cor-fundo-claro: #e6f7ff; /* Azul muito claro, quase branco */
+        --cor-fundo-form: #f0f9f4; /* Verde-água muito claro para fundo do form */
+        --cor-borda: #b3d9e6;      /* Azul acinzentado claro para bordas */
+        --cor-borda-input: #cce0d6; /* Verde acinzentado claro para bordas de input */
+        --cor-botao: #007bff;      /* Azul vibrante para botão (cor primária comum) */
+        --cor-botao-hover: #0056b3; /* Azul mais escuro para hover do botão */
+        --cor-texto-botao: white;
+        --cor-obrigatorio: #dc3545; /* Vermelho padrão para alerta */
+        --cor-texto-label: #205070; /* Azul escuro acinzentado para texto */
+    }
+
+
+  /* Tons Azul-Acinzentados */
+   :root {
+       --cor-fundo-claro: #f0f4f8; /* Azul-acinzentado muito claro para fundo */
+       --cor-fundo-form: #e0e8f0; /* Azul-acinzentado claro para fundo do form */
+       --cor-borda: #a0b0c0;      /* Azul-acinzentado médio para bordas */
+       --cor-borda-input: #b0c4de; /* Azul-acinzentado um pouco mais claro para bordas de input */
+       --cor-botao: #6a7a8a;      /* Azul-acinzentado escuro para botão */
+       --cor-botao-hover: #5a6a7a; /* Azul-acinzentado mais escuro para hover do botão */
+       --cor-texto-botao: white;
+       --cor-obrigatorio: red;
+       --cor-texto-label: #465a70; /* Azul-acinzentado escuro para texto */
+   }
+
+
+
+    /* Tons Verdes/Naturais */
+   :root {
+       --cor-fundo-claro: #f4f8f0; /* Verde muito claro para fundo */
+       --cor-fundo-form: #e8f0e0; /* Verde claro para fundo do form */
+       --cor-borda: #a0c0a0;      /* Verde médio para bordas */
+       --cor-borda-input: #c4dec4; /* Verde um pouco mais claro para bordas de input */
+       --cor-botao: #6a8a6a;      /* Verde escuro para botão */
+       --cor-botao-hover: #5a7a5a; /* Verde mais escuro para hover do botão */
+       --cor-texto-botao: white;
+       --cor-obrigatorio: #d9534f; /* Vermelho para obrigatório (pode manter ou ajustar) */
+       --cor-texto-label: #467046; /* Verde escuro para texto */
+   }
+
+
+   /* Tons Quentes/Pôr do Sol */
+   :root {
+       --cor-fundo-claro: #fff0e6; /* Laranja/Pêssego muito claro para fundo */
+       --cor-fundo-form: #ffe0cc; /* Laranja/Pêssego claro para fundo do form */
+       --cor-borda: #f0b080;      /* Laranja médio para bordas */
+       --cor-borda-input: #ffccaa; /* Laranja um pouco mais claro para bordas de input */
+       --cor-botao: #d98c5f;      /* Laranja/Marrom para botão */
+       --cor-botao-hover: #c87c4f; /* Laranja/Marrom mais escuro para hover do botão */
+       --cor-texto-botao: white;
+       --cor-obrigatorio: #c0392b; /* Vermelho escuro */
+       --cor-texto-label: #8b5a2b; /* Marrom escuro para texto */
+   }
+   
+   /* Tons de Cinza com Toque Roxo */
+   :root {
+       --cor-fundo-claro: #f8f8f8; /* Cinza muito claro para fundo */
+       --cor-fundo-form: #ffffff; /* Branco para fundo do form */
+       --cor-borda: #dcdcdc;      /* Cinza claro para bordas */
+       --cor-borda-input: #e0e0e0; /* Cinza um pouco mais claro para bordas de input */
+       --cor-botao: #8e44ad;      /* Roxo como cor de destaque para botão */
+       --cor-botao-hover: #7a3a9a; /* Roxo mais escuro para hover do botão */
+       --cor-texto-botao: white;
+       --cor-obrigatorio: #e74c3c; /* Vermelho */
+       --cor-texto-label: #555555; /* Cinza escuro para texto */
+   }
+   
+     /* Tons(Azul/Cinza/Branco) */
+ :root {
+    --cor-fundo-claro: #f0f2f5; /* Cinza muito claro (fundo comum do FB) */
+    --cor-fundo-form: #ffffff; /* Branco para o fundo do formulário */
+    --cor-borda: #dadde1;      /* Cinza claro para bordas gerais */
+    --cor-borda-input: #ccd0d5; /* Cinza um pouco mais escuro para bordas de input */
+    --cor-botao: #1877f2;      /* Azul principal do Facebook */
+    --cor-botao-hover: #166fe5; /* Azul um pouco mais escuro para hover */
+    --cor-texto-botao: white;
+    --cor-obrigatorio: #fa3e3e; /* Vermelho vivo para alerta */
+    --cor-texto-label: #1c1e21; /* Cinza muito escuro/quase preto para texto */
+}
