@@ -1,4 +1,34 @@
+EN
+Class Lou_FormBuilder programmatically generates an HTML form.
 
+Class Lou_FormBuilder is a useful tool to programmatically generate an HTML form.
+The FormBuilder class encapsulates the creation of common HTML elements (form, input, label, textarea, select).
+Using HTML methods and attributes, including boolean attributes, is a smart and flexible way to make code more readable, and semantic compared to hand-writing pure HTML mixed with PHP.
+
+Using htmlspecialchars in values ​​and attributes within the class strengthens security to prevent XSS attacks.
+
+Warning:
+The process.php script only displays the received data. In a real application you need to:
+Validation:
+Check if the required fields have been filled in, if the email is valid, if the passwords match, if the data has the expected formats, etc.
+Sanitization:
+Sanitize the data to avoid security issues (although htmlspecialchars in the class already helps against XSS on display, you may need sanitization for other contexts, like saving to the database).
+Business Logic:
+Save data to a database, send an email, etc.
+User Feedback:
+Redirect to a success page or display error messages on the form itself (which would require more logic, perhaps passing errors back to index.php via the session).
+Error Handling/Old Values:
+Add parameters to display error messages near fields or to repopulate the form with previously submitted data in case of validation failure.
+
+Improvements to be made:
+Radio/Checkbox Grouping:
+Having specific methods to generate radio groups or checkboxes, simplifying the code
+
+Conclusion
+This is a great starting point for creating dynamic, reusable forms.
+
+
+PT
 Classe FormBuilder gera programaticamente um formulário HTML.
 
 Classe FormBuilder é uma ferramenta útil para gerar programaticamente um formulário HTML.
